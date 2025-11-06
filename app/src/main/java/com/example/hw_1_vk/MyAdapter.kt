@@ -19,8 +19,7 @@ class MyAdapter() : RecyclerView.Adapter<MyViewHolder>() {
     }
 
     override fun onCreateViewHolder(
-        parent: ViewGroup,
-        viewType: Int
+        parent: ViewGroup, viewType: Int
     ): MyViewHolder {
         return MyViewHolder(
             LayoutInflater.from(parent.context).inflate(R.layout.square, parent, false)
@@ -43,7 +42,8 @@ class MyAdapter() : RecyclerView.Adapter<MyViewHolder>() {
 
 }
 
-class MyDifferCallback(val oldItems: List<NumberData>, val newItems: List<NumberData>) : DiffUtil.Callback() {
+class MyDifferCallback(val oldItems: List<NumberData>, val newItems: List<NumberData>) :
+    DiffUtil.Callback() {
 
     override fun getOldListSize(): Int {
         return oldItems.size

@@ -14,7 +14,7 @@ class MainActivity : ComponentActivity() {
 
 
     lateinit var recyclerView: RecyclerView
-    lateinit var buttonAddSquare : Button
+    lateinit var buttonAddSquare: Button
     val adapter = MyAdapter()
     private val viewModel: MainViewModel by viewModels()
 
@@ -43,8 +43,6 @@ class MainActivity : ComponentActivity() {
         buttonAddSquare.setOnClickListener {
             viewModel.addNumber()
         }
-
-
 
     }
 }

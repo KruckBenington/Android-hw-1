@@ -9,7 +9,6 @@ class MyViewHolder(view: View) : RecyclerView.ViewHolder(view) {
 
     private val square = view.findViewById<TextView>(R.id.square_text)
 
-
     fun bind(data : NumberData) {
         square.text = data.number.toString()
     }
@@ -22,9 +21,6 @@ class MyViewHolder(view: View) : RecyclerView.ViewHolder(view) {
 
         square.setBackgroundResource(color)
     }
-
-
-
 
 }
 
