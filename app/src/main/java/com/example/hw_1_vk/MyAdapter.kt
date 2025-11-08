@@ -8,7 +8,6 @@ import java.util.ArrayList
 
 class MyAdapter() : RecyclerView.Adapter<MyViewHolder>() {
 
-
     private var items: List<NumberData> = emptyList()
 
     fun addItem(newItems: List<NumberData>) {
@@ -27,7 +26,6 @@ class MyAdapter() : RecyclerView.Adapter<MyViewHolder>() {
     }
 
     override fun onBindViewHolder(holder: MyViewHolder, position: Int) {
-        val index = items[position]
 
         val colorToSet = if (position % 2 == 1) ButtonColor.Blue else ButtonColor.Red
         holder.setColor(colorToSet)
